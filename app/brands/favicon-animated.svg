@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <clipPath id="clipCircle"><circle cx="256" cy="256" r="225" /></clipPath>
+    <style>
+      .badge { opacity: 0; animation: fadeIn .35s ease-out forwards; }
+      .trace { stroke: #FFFFFF; stroke-width: 52; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw .8s ease forwards; }
+      .l1 { animation-delay: .12s; }
+      .m1 { animation-delay: .28s; }
+      .z1 { animation-delay: .46s; }
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes fadeIn { to { opacity: 1; } }
+    </style>
+  </defs>
+  <g class="badge" clip-path="url(#clipCircle)">
+    <rect x="31" y="31" width="450" height="103.5" fill="#A9D6F2"/>
+    <rect x="31" y="134.5" width="450" height="81" fill="#F5B9C8"/>
+    <rect x="31" y="215.5" width="450" height="81" fill="#F6F3EE"/>
+    <rect x="31" y="296.5" width="450" height="81" fill="#F5B9C8"/>
+    <rect x="31" y="377.5" width="450" height="103.5" fill="#A9D6F2"/>
+  </g>
+  <g>
+    <path class="trace l1" d="M154 125 L154 337 L245 337"/>
+    <path class="trace m1" d="M215 307 L215 153 L282 225 L349 153 L349 307"/>
+    <path class="trace z1" d="M236 337 L298 337 L258 395 L320 395"/>
+  </g>
+</svg>

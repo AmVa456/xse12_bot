@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<style>
+.trace{stroke:#111827;stroke-width:42;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 1s ease forwards}
+.l{animation-delay:.15s}
+.m{animation-delay:.45s}
+.z{animation-delay:.8s}
+@keyframes draw{to{stroke-dashoffset:0}}
+</style>
+<rect x="64" y="64" width="384" height="384" rx="48" fill="#A9D6F2"/>
+<rect x="64" y="160" width="384" height="56" fill="#F5B9C8"/>
+<rect x="64" y="216" width="384" height="56" fill="#F6F3EE"/>
+<rect x="64" y="272" width="384" height="56" fill="#F5B9C8"/>
+<path class="trace l" d="M170 150 V330 H280"/>
+<path class="trace m" d="M240 300 V180 L300 240 L360 180 V300"/>
+<path class="trace z" d="M250 330 H320 L280 400 H350"/>
+</svg>
