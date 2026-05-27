@@ -1,0 +1,11 @@
+{
+  "pipeline": "telegram.commands",
+  "description": "Parses Telegram slash commands before intent engine.",
+  "steps": [
+    "detect_command",
+    "extract_command_name",
+    "extract_command_args",
+    "attach_command_object",
+    "route_to_command_pipe"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TelegramConnectorEvent",
+  "type": "object",
+
+  "properties": {
+    "platform": {
+      "type": "string",
+      "const": "telegram"
+    },
+
+    "type": {
+      "type": "string",
+      "enum": [
+        "text",
+        "photo",
+        "document",
+        "sticker",
+        "voice",
+        "video",
+        "unknown"
+      ]
+    },
+
+    "chat_id": {
+      "type": ["number", "null"]
+    },
+
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": { "type": ["number", "null"] },
+        "username": { "type": ["string", "null"] },
+        "first_name": { "type": ["string", "null"] },
+        "last_name": { "type": ["string", "null"] }
+      },
+      "required": ["id"]
+    },
+
+    "content": {
+      "type": "object",
+      "properties": {
+        "text": { "type": ["string", "null"] },
+        "media": { "type": ["object", "null"] }
+      }
+    },
+
+    "raw": {
+      "type": "object",
+      "description": "Full raw Telegram update payload"
+    }
+  },
+
+  "required": ["platform", "type", "raw"]
+}

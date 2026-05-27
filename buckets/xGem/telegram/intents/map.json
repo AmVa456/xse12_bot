@@ -1,0 +1,8 @@
+{
+  "greeting": "action_greet",
+  "farewell": "action_goodbye",
+  "ask_weather": "action_weather",
+  "ask_time": "action_time",
+  "ask_profile": "action_profile",
+  "photo_upload": "action_photo_ack"
+}

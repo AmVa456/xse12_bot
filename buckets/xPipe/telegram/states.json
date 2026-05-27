@@ -1,0 +1,29 @@
+{
+  "pipeline": "telegram.state_machine",
+  "states": {
+    "idle": {
+      "on": {
+        "start_profile_setup": "profile_name"
+      }
+    },
+
+    "profile_name": {
+      "on": {
+        "user_message": "profile_age"
+      }
+    },
+
+    "profile_age": {
+      "on": {
+        "user_message": "profile_confirm"
+      }
+    },
+
+    "profile_confirm": {
+      "on": {
+        "confirm": "idle",
+        "cancel": "idle"
+      }
+    }
+  }
+}
