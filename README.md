@@ -1,8 +1,7 @@
 # **@xe12_bot** Telegram
 
 ![favicon](app/brands/favicon-dark.ico)
-![badge]()
-![logo](app/brands/favicon.ico)
+
 
 ## **Install**
 
@@ -12,3 +11,4 @@ cd xse12_bot
 npm i
 npm run dev
 ```
+![logo](app/brands/favicon.ico)
